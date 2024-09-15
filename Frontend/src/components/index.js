@@ -1,7 +1,7 @@
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'
+import Header from './Header/Header.jsx'
+import Sidebar from './Sidebar/Sidebar.jsx'
 
 export {
     Header,
-    Footer,
+    Sidebar,
 }
