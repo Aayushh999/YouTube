@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Header, Sidebar } from './components'
+import { Header, Sidebar } from './components/Index.js'
 import { Outlet } from 'react-router-dom'
 import { PulseSphere, SimpleLoader , WaveFlow} from 'spinny-loader' 
 import './App.css'
@@ -16,11 +16,11 @@ function App() {
     <>
       <hr className="w-full border-t border-white fixed top-0 left-0 z-10 md:hidden" />
 
-      <div className='w-full h-full bg-white text-gray-700'>
+      <div className='w-full h-full bg-white text-black'>
         <div>
           <Header toggleSidebar={toggleSidebar}/>
           <main>
-            {/* <Outlet /> */}
+            <Outlet />
           </main>
           {isSidebarOpen && <Sidebar toggleSidebar={toggleSidebar}/>}
         </div>
